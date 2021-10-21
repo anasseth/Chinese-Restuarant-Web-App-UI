@@ -1,0 +1,222 @@
+.center {
+  border: 2px solid #f8e5d6;
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #f2e9e2;
+  margin-bottom: 20px;
+}
+.ProductImageandTexts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  //   border: 1px solid red;
+  width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  height: 450px;
+  padding: 20px;
+}
+.ProductImageContainer {
+  width: 35%;
+  height: 400px;
+  //   border: 2px solid red;
+}
+.ProductTextContainer {
+  width: 50%;
+  height: auto;
+  //   border: 2px solid red;
+}
+.ImageContainer {
+  margin: auto;
+  width: 300px;
+  height: auto;
+  //   border: 2px solid blue;
+}
+.Image {
+  width: 100%;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.ThumbnailContainer {
+  padding-top: 5px;
+  margin: auto;
+  width: max-content;
+  height: auto;
+  //   border: 2px solid blue;
+}
+.ImageThumbnail {
+  width: 90px;
+  height: 90px;
+  //   border: 1px solid black;
+  margin-left: 7px;
+  margin-right: 7px;
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+.ImageThumbnail:hover {
+  opacity: 1;
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+
+.ProductHeading {
+  margin-top: -5px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.DiscountText {
+  margin-top: -15px;
+}
+.PriceText {
+  margin-top: -20px;
+  font-size: 50px;
+}
+.StockText {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -25px;
+  color: #1db91d;
+}
+.DetailText {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+.ShareText {
+  font-size: 16px;
+  font-weight: 700;
+  // margin-top: -25px;
+}
+.SocialIcon {
+  width: 35px;
+}
+.ListContainer {
+  margin: auto;
+  width: 75%;
+}
+
+.ListText {
+  // padding-left:100px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #b48878;
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  list-style-type: none;
+  transition-duration: 0.3s;
+}
+.ListText:hover {
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.SpecialInstructionInput {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  border: 2px solid #b48878;
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.SpecialInstructionInput::placeholder {
+  color: #9e5f48;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+.LastContainer {
+  //   border: 2px solid black;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+// .Counter {
+//   //   width: 30%;
+//   border: 2px solid black;
+// }
+// .Price {
+//   //   width: 30%;
+//   border: 2px solid black;
+// }
+// .Button {
+//   //   width: 30%;
+//   border: 2px solid black;
+// }
+
+.CounterButton {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+.CounterButton:hover {
+  background-color: #9e5f48;
+  color: white;
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.CounterText {
+  margin: auto;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid grey;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2px;
+}
+.PriceText2 {
+  font-size: 80px;
+}
+.AddToCart {
+  height: 70px;
+  width: 250px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: #ff5a54;
+  border: 1px solid transparent;
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.AddToCart:hover {
+  border: #ff5a54 solid 1px;
+  background-color: white;
+  color: #ff5a54;
+  transition-duration: 0.3s;
+}

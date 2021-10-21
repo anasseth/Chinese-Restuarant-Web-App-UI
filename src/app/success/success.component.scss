@@ -1,0 +1,293 @@
+.SuccessHeader {
+  width: 100%;
+  height: auto;
+}
+.HeaderContainer2 {
+  width: 100%;
+  height: 200px;
+  background-color: #f2e9e2;
+}
+.HeaderContainer2Title {
+  margin: auto;
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  margin-left: 30%;
+}
+.HeaderTitle {
+  font-size: 60px;
+  color: #016dab;
+  font-weight: 600;
+}
+.HeaderTagLine {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-top: -40px;
+}
+.SuccessMainBody {
+  width: 100%;
+  //   height: auto;
+}
+.SuccessFormContainer {
+  margin: auto;
+  width: 50%;
+  //   height: auto;
+}
+.FormSubHeading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.ChargesSummaryOuterContainer {
+  margin-top: 10px !important;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: auto;
+}
+.OrderSummaryOuterContainer {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: auto;
+}
+.ChargesSummaryContainer {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.OrderSummaryContainer {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.OSCBox1 {
+  width: 15%;
+  height: auto;
+  // border: 1px solid black;
+}
+.OSCBox2 {
+  width: 65%;
+  padding-left: 3%;
+  // border: 1px solid black;
+}
+.OSCBox3 {
+  width: 15%;
+  // border: 1px solid black;
+}
+.ProductDescription {
+  width: 100%;
+  color: #ff5a54;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+}
+.PDText {
+  width: 70%;
+  //   border: 2px solid black;
+  color: black;
+  font-size: 18 !important;
+  font-weight: 500;
+  display: inline;
+  margin-left: 15px;
+}
+.ProductPrice {
+  font-size: 28px;
+  color: #ff5a54;
+  font-weight: 700;
+  align-items: flex-start;
+}
+.ChargesContainer {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  //   padding: 5px;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  //   border: 1px solid black;
+}
+.ChargesText {
+  font-size: 20px;
+  width: 60%;
+  height: auto;
+  //   border: 1px solid black;
+  font-weight: 500;
+}
+.ChargesAmount {
+  font-weight: 500;
+  font-size: 20px;
+  width: 30%;
+  height: auto;
+  //   border: 1px solid black;
+  text-align: right;
+}
+.ChargesTextTotal {
+  font-size: 20px;
+  width: 60%;
+  height: auto;
+  font-weight: 700;
+}
+.ChargesAmountTotal {
+  font-weight: 700;
+  font-size: 20px;
+  width: 30%;
+  height: auto;
+  text-align: right;
+}
+
+.FormSubHeadingOS {
+  font-size: 23px;
+  font-weight: 700;
+}
+.OrderInformationOuterContainer {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: -15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.OrderInformationContainer {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.CheckboxContainer {
+  justify-content: flex-start;
+  align-items: center;
+}
+.OrderInformationText {
+  font-size: 20px;
+  width: 10%;
+  height: auto;
+  margin-top: 3px;
+  //   border: 1px solid black;
+  font-weight: 500;
+}
+.OrderInformationCheckbox {
+  font-size: 20px;
+  width: 30%;
+  height: auto;
+  margin-top: 3px;
+  text-align: left;
+  font-weight: 500;
+}
+.CheckboxAmount {
+  color: grey;
+}
+.OrderInformationAmount {
+  font-weight: 500;
+  margin-top: 3px;
+  font-size: 20px;
+  width: 85%;
+  height: auto;
+  //   border: 1px solid black;
+  //   text-align: right;
+}
+.Checkbox {
+  display: inline;
+}
+input:checked {
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.DeliveryInformationOuterContainer {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: -15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.DeliveryInformationContainer {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.DeliveryInformationLabel {
+  font-size: 20px;
+  width: 90%;
+  height: auto;
+  font-weight: 500;
+}
+.DeliveryInformationInputContainer {
+  font-size: 20px;
+  width: 90%;
+  height: auto;
+  font-weight: 500;
+}
+.DeliveryInformationInput {
+  padding: 13px;
+  width: 80%;
+  margin-top: 5px;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 25px;
+}
+.DeliveryInformationInput::placeholder {
+  color: grey;
+  font-weight: 500;
+  font-size: 20px;
+}
+.ContinueShopping {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: #ff5a54;
+  border: 1px solid transparent;
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.ContinueShopping:hover {
+  border: #ff5a54 solid 1px;
+  background-color: white;
+  color: #ff5a54;
+  transition-duration: 0.3s;
+}
+.ContinueShoppingContainer {
+  width: 100%;
+  margin: auto;
+}

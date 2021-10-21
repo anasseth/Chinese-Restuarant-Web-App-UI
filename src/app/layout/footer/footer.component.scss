@@ -1,0 +1,110 @@
+.FooterContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  border-top: 3px solid #e0e0e0;
+  background-color: white;
+}
+
+.LogoContainer {
+  margin: auto;
+  width: 10%;
+  min-height: 140px;
+  z-index: 10;
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -30%;
+  background-color: white;
+  padding: 20px;
+  min-width: 10px;
+}
+
+.FooterLogo {
+  margin: auto;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 193, 193);
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+
+.FooterMain {
+  margin-top: 30px;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.Box {
+  width: 23%;
+  height: 200px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.BottomContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  height: 30px;
+  border-top: 2px solid black;
+  font-weight: 500;
+}
+
+ul.LeftList {
+  list-style: none;
+}
+
+ul.LeftList li::before {
+  content: "\2022";
+  margin: 10px;
+  background: linear-gradient(45deg, rgb(15, 2, 187), rgb(15, 2, 187));
+  font-weight: bold;
+  display: inline-block;
+  width: 18px;
+  border-radius: 50%;
+  position: relative;
+  left: -12px;
+}
+
+ul.RightList {
+  list-style: none;
+}
+
+ul.RightList li::before {
+  content: "\2022";
+  margin: 5px;
+  background: linear-gradient(45deg, rgb(15, 2, 187), rgb(15, 2, 187));
+  font-weight: bold;
+  display: inline-block;
+  width: 18px;
+  border-radius: 50%;
+  position: relative;
+  right: -12px;
+}
+
+ul li {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 500;
+}
