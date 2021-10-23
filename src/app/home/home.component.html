@@ -1,4 +1,75 @@
-<div class="HeaderBar">
+<div class="hidee2 HeaderBar2">
+  <div class="OfficialLogo">
+    <img src="../../../assets/images/Logo.jpeg" class="Logo2" alt="" />
+  </div>
+  <div style="width: 100%" class="hidee2">
+    <div class="TabIcons2">
+      <div style="width: fit-content; margin: auto">
+        <a href="" class="Tabs2">Home</a>
+        <a href="" class="Tabs2">Menu</a>
+        <a href="" class="Tabs2">Brand Story</a>
+        <a href="" class="Tabs2">Review</a>
+      </div>
+    </div>
+  </div>
+  <div class="HeaderImageDemo">
+    <div class="ImageContainer2">
+      <img
+        src="../../assets/images/hero_img2_2x.png"
+        style="width: 90%; margin-top: 60px"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<div style="width: fit-content" class="hidee2">
+  <div class="TextBox" style="text-align: center">
+    <h1
+      class="Que"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        font-weight: 700;
+      "
+    >
+      How About
+    </h1>
+    <h1
+      class="Que"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        color: #ff5a54;
+        font-weight: 700;
+      "
+    >
+      Japanese Food ?
+    </h1>
+    <p
+      class="Para"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        margin-top: 20px;
+      "
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco
+    </p>
+    <button
+      class="BuyNowButton"
+      style="width: 30%; margin: auto; margin-top: 20px; margin-bottom: 50px"
+    >
+      Order Now
+    </button>
+  </div>
+</div>
+
+<div class="HeaderBar hidee">
   <div class="OfficialLogo">
     <img src="../../../assets/images/Logo.jpeg" class="Logo" alt="" />
   </div>
@@ -9,7 +80,7 @@
     <a href="" class="Tabs">Review</a>
   </div>
 </div>
-<div class="TextandImage">
+<div class="TextandImage hidee">
   <div class="HeaderText">
     <div class="TextBox">
       <h1 class="Que">How About</h1>
@@ -22,7 +93,7 @@
       <button class="BuyNowButton" style="width: 30%">Order Now</button>
     </div>
   </div>
-  <div class="HeaderImage">
+  <div class="HeaderImage hidee">
     <img
       src="../../assets/images/hero_img.png"
       style="position: absolute; z-index: 5; left: 40px; width: 20%"
@@ -35,7 +106,7 @@
     />
   </div>
 </div>
-<owl-carousel-o [options]="customOptions">
+<owl-carousel-o [options]="customOptions" class="hidee">
   <ng-container *ngFor="let slide of slidesStore">
     <ng-template carouselSlide [id]="slide.id">
       <img [src]="slide.src" [title]="slide.title" />
@@ -49,7 +120,7 @@
 >
   <!-- <div class="HorizontalScrollBarContainer"> -->
   <div class="HorizontalScrollBar">
-    <div style="width: 100%" class="ngx-horizontal-scroll-menu">
+    <div style="width: 100%" class="ngx-horizontal-scroll-menu hidee">
       <ngx-horizontal-scroll-menu
         *ngIf="items.length > 0"
         [background]="background"
