@@ -1,4 +1,9 @@
 <div class="MainContainer">
+  <div class="SuccessHeader2">
+    <div class="OfficialLogo">
+      <img src="../../../assets/images/Logo.jpeg" class="Logo" alt="" />
+    </div>
+  </div>
   <div class="LeftContainer">
     <div class="OrderSummaryOuterContainer">
       <div class="OrderSummaryContainer">
@@ -77,7 +82,11 @@
           <div class="ChargesText">Tax</div>
           <div class="ChargesAmount">$ 0.0</div>
         </div>
-        <hr />
+        <img
+          src="../../assets/images/header.png"
+          alt=""
+          style="margin-top: 10px; margin-bottom: 10px"
+        />
         <div class="ChargesContainer">
           <div class="ChargesTextTotal">Grand Total (TWD)</div>
           <div class="ChargesAmountTotal">$ 112.50</div>
@@ -87,6 +96,7 @@
   </div>
   <div class="RightContainer">
     <div class="OrderInformationOuterContainer">
+      <h1 class="title">Order Information</h1>
       <div class="OrderInformationContainer CheckboxContainer">
         <div class="OrderInformationCheckbox">
           <input
@@ -133,6 +143,7 @@
     <br />
 
     <div class="ClientInformationOuterContainer">
+      <h1 class="title">Client Information</h1>
       <div class="OrderInformationContainer CheckboxContainer">
         <div class="ClientInformationCheckbox">
           <input
@@ -243,8 +254,8 @@
 
     <br />
     <br />
-
     <div class="DeliveryInformationOuterContainer">
+      <h1 class="title">Delivery Information</h1>
       <div class="DeliveryInformationContainer">
         <div class="DeliveryInformationLabel">Name of Receiver *</div>
         <div class="DeliveryInformationInputContainer">
@@ -289,14 +300,90 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
 
+    <div class="DeliveryInformationOuterContainer">
+      <h1 class="title">Payment Information</h1>
+      <div class="OrderInformationContainer CheckboxContainer3">
+        <div class="PaymentInformationCheckbox">
+          <input
+            type="radio"
+            name=""
+            id=""
+            class="Checkbox"
+            style="display: inline"
+          />
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/cash-.png"
+          />
+          Cash Payment
+        </div>
+        <br />
+        <div class="PaymentInformationCheckbox">
+          <input
+            type="radio"
+            name=""
+            id=""
+            class="Checkbox"
+            style="display: inline"
+          />
+          <img
+            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-credit-card-business-those-icons-lineal-those-icons-1.png"
+          />
+          Credit Card
+          <span style="height: 15px; margin-left: 50px; vertical-align: middle">
+            <img
+              src="https://img.icons8.com/color-glass/96/000000/paypal.png"
+              style="height: 45px"
+            />
+            <img
+              src="https://img.icons8.com/color/96/000000/visa.png"
+              style="height: 45px"
+            />
+            <img
+              src="https://img.icons8.com/color/96/000000/mastercard.png"
+              style="height: 45px"
+            />
+            <img
+              src="https://img.icons8.com/color/96/000000/amex.png"
+              style="height: 45px"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="ContactInformationBox">
+        <p class="InformationBox">
+          ( Your Contact Information Will Be Saved For Future Booking, Please
+          Donot Check This If You are Using a Public Computer )
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    style="
+      margin: auto;
+      width: 50%;
+      height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+    "
+  >
     <div class="ContinueShoppingContainer">
       <input
         type="submit"
-        name="Continue Shopping"
-        id=""
+        name="Cancel"
+        class="ContinueShopping Cancel"
+        value="Cancel"
+      />
+      <input
+        type="submit"
+        name="Confirm"
         class="ContinueShopping"
-        value="Continue Shopping"
+        value="Confirm"
+        style="float: right"
+        (click)="orderComplete()"
       />
     </div>
   </div>

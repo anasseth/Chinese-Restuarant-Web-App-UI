@@ -1,5 +1,5 @@
 .FooterContainer {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
@@ -14,6 +14,7 @@
   width: 10%;
   min-height: 140px;
   z-index: 10;
+  border-radius: 50%;
   position: absolute;
   left: -100%;
   right: -100%;
@@ -76,7 +77,7 @@ ul.LeftList {
 ul.LeftList li::before {
   content: "\2022";
   margin: 10px;
-  background: linear-gradient(45deg, rgb(15, 2, 187), rgb(15, 2, 187));
+  background: linear-gradient(45deg, rgb(12, 2, 145), rgb(12, 3, 146));
   font-weight: bold;
   display: inline-block;
   width: 18px;
@@ -92,7 +93,7 @@ ul.RightList {
 ul.RightList li::before {
   content: "\2022";
   margin: 5px;
-  background: linear-gradient(45deg, rgb(15, 2, 187), rgb(15, 2, 187));
+  background: linear-gradient(45deg, rgb(10, 1, 138), rgb(11, 1, 145));
   font-weight: bold;
   display: inline-block;
   width: 18px;

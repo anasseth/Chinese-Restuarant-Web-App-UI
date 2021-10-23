@@ -1,11 +1,46 @@
 .SuccessHeader {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.SuccessHeader2 {
+  margin: auto;
+  border-bottom-left-radius: 320px;
+  border-bottom-right-radius: 320px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: -1px 22px 72px -31px rgba(90, 52, 52, 0.75);
+  -webkit-box-shadow: -1px 22px 72px -31px rgba(90, 52, 52, 0.75);
+  -moz-box-shadow: -1px 22px 72px -31px rgba(90, 52, 52, 0.75);
+}
+.OrderCompleteLogo {
+  width: 200px;
+  height: 200px;
+  margin-left: 10%;
+}
+.OfficialLogo {
+  margin: auto;
+  width: 230px;
+  height: 200px;
+}
+.Logo {
+  margin-top: 30px;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 193, 193);
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
 }
 .HeaderContainer2 {
-  width: 100%;
+  width: 60%;
   height: 200px;
-  background-color: #f2e9e2;
+  background-color: transparent;
 }
 .HeaderContainer2Title {
   margin: auto;
@@ -13,7 +48,7 @@
   width: 70%;
   height: auto;
   padding: 20px;
-  margin-left: 30%;
+  margin-left: 5%;
 }
 .HeaderTitle {
   font-size: 60px;
@@ -42,15 +77,23 @@
 .ChargesSummaryOuterContainer {
   margin-top: 10px !important;
   width: 100%;
-  border: 1px solid grey;
+  // border: 1px solid grey;
   border-radius: 10px;
   margin: auto;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 .OrderSummaryOuterContainer {
   width: 100%;
-  border: 1px solid grey;
+  // border: 1px solid grey;
   border-radius: 10px;
   margin: auto;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 .ChargesSummaryContainer {
   margin: auto;
@@ -160,12 +203,16 @@
 }
 .OrderInformationOuterContainer {
   width: 100%;
-  border: 1px solid grey;
+  // border: 1px solid grey;
   border-radius: 10px;
   margin: auto;
   margin-top: -15px;
   padding-top: 10px;
   padding-bottom: 20px;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 .OrderInformationContainer {
   margin: auto;
@@ -179,6 +226,7 @@
   align-items: center;
 }
 .CheckboxContainer {
+  margin-left: 20px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -220,12 +268,16 @@ input:checked {
 }
 .DeliveryInformationOuterContainer {
   width: 100%;
-  border: 1px solid grey;
+  // border: 1px solid grey;
   border-radius: 10px;
   margin: auto;
   margin-top: -15px;
   padding-top: 10px;
   padding-bottom: 20px;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 .DeliveryInformationContainer {
   margin: auto;
@@ -265,7 +317,7 @@ input:checked {
 .ContinueShopping {
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   height: 50px;
   width: 100%;
   color: white;
