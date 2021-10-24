@@ -45,7 +45,7 @@
   height: auto;
 }
 .RightContainer {
-  width: 55%;
+  width: 50%;
   margin-top: 100px;
   // border: 3px solid black;
   height: auto;
@@ -154,7 +154,7 @@
   // border: 1px solid black;
 }
 .OSCBox3 {
-  width: 15%;
+  width: 17%;
   // border: 1px solid black;
 }
 .ProductDescription {
@@ -175,7 +175,7 @@
   margin-left: 15px;
 }
 .ProductPrice {
-  font-size: 28px;
+  font-size: 25px;
   color: #ff5a54;
   font-weight: 700;
   align-items: flex-start;
@@ -240,7 +240,7 @@
 }
 .OrderInformationContainer {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   margin-top: 3px;
@@ -305,7 +305,7 @@ input:checked {
 }
 .DeliveryInformationContainer {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   margin-top: 6px;
@@ -354,7 +354,7 @@ input:checked {
 }
 .ClientInformationContainer {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   margin-top: 6px;
@@ -476,4 +476,73 @@ input:checked {
   background-color: #ff5a54;
   color: white;
   transition-duration: 0.3s;
+}
+
+.Counter {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.CounterButton {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  border: 1px solid brown;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 2px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+.CounterButton:hover {
+  background-color: #9e5f48;
+  color: white;
+  transition-duration: 0.3s;
+  box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 30px -16px rgba(0, 0, 0, 0.75);
+}
+.CounterText {
+  margin: auto;
+  border-radius: 5px;
+  width: 80px;
+  height: 35px;
+  border: 2px solid grey;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2px;
+}
+.BackButton {
+  width: 50px;
+  height: 50px;
+  background-color: #9e5f48;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  transition-duration: 0.3s;
+}
+.BackButton:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1050px) {
+  .RightContainer {
+    width: 98%;
+  }
+  .LeftContainer {
+    width: 98%;
+  }
+  .ContinueShopping {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .OfficialLogo {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+  }
 }

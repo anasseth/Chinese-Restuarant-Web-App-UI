@@ -3,6 +3,9 @@
     <div class="OfficialLogo">
       <img src="../../../assets/images/Logo.jpeg" class="Logo" alt="" />
     </div>
+    <div class="BackButton" [routerLink]="['/home']">
+      <img src="https://img.icons8.com/ios/50/000000/circled-left-2.png" />
+    </div>
   </div>
   <div class="LeftContainer">
     <div class="OrderSummaryOuterContainer">
@@ -19,24 +22,10 @@
             <div>x1</div>
             <div class="PDText">Lorem Ipsum dolor sit amt</div>
           </div>
-        </div>
-        <div class="OSCBox3">
-          <h1 class="ProductPrice">$ 110</h1>
-        </div>
-      </div>
-      <hr />
-      <div class="OrderSummaryContainer">
-        <div class="OSCBox1">
-          <img
-            src="../../assets/images/food-1.jpg"
-            alt=""
-            style="width: 100%"
-          />
-        </div>
-        <div class="OSCBox2">
-          <div class="ProductDescription">
-            <div>x1</div>
-            <div class="PDText">Lorem Ipsum dolor sit amt</div>
+          <div class="Counter">
+            <button class="CounterButton">-</button>
+            <button class="CounterText">01</button>
+            <button class="CounterButton">+</button>
           </div>
         </div>
         <div class="OSCBox3">
@@ -56,6 +45,35 @@
           <div class="ProductDescription">
             <div>x1</div>
             <div class="PDText">Lorem Ipsum dolor sit amt</div>
+          </div>
+          <div class="Counter">
+            <button class="CounterButton">-</button>
+            <button class="CounterText">01</button>
+            <button class="CounterButton">+</button>
+          </div>
+        </div>
+        <div class="OSCBox3">
+          <h1 class="ProductPrice">$ 110</h1>
+        </div>
+      </div>
+      <hr />
+      <div class="OrderSummaryContainer">
+        <div class="OSCBox1">
+          <img
+            src="../../assets/images/food-1.jpg"
+            alt=""
+            style="width: 100%"
+          />
+        </div>
+        <div class="OSCBox2">
+          <div class="ProductDescription">
+            <div>x1</div>
+            <div class="PDText">Lorem Ipsum dolor sit amt</div>
+          </div>
+          <div class="Counter">
+            <button class="CounterButton">-</button>
+            <button class="CounterText">01</button>
+            <button class="CounterButton">+</button>
           </div>
         </div>
         <div class="OSCBox3">
@@ -101,7 +119,7 @@
         <div class="OrderInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="Delivery"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -115,7 +133,7 @@
         <div class="OrderInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="Delivery"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -148,7 +166,7 @@
         <div class="ClientInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="MrMsMrs"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -159,7 +177,7 @@
         <div class="ClientInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="MrMsMrs"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -170,7 +188,7 @@
         <div class="ClientInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="MrMsMrs"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -241,13 +259,6 @@
             class="ClientInformationTextarea"
             placeholder="Any Additional Requirement to the Order !"
           ></textarea>
-          <!-- <textarea
-            type="text"
-            name=""
-            id=""
-            class="ClientInformationInput"
-            placeholder="Your Name !"
-          /> -->
         </div>
       </div>
     </div>
@@ -309,7 +320,7 @@
         <div class="PaymentInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="Payment"
             id=""
             class="Checkbox"
             style="display: inline"
@@ -323,7 +334,7 @@
         <div class="PaymentInformationCheckbox">
           <input
             type="radio"
-            name=""
+            name="Payment"
             id=""
             class="Checkbox"
             style="display: inline"

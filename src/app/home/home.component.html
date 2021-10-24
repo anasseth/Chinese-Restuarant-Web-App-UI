@@ -5,10 +5,10 @@
   <div style="width: 100%" class="hidee2">
     <div class="TabIcons2">
       <div style="width: fit-content; margin: auto">
-        <a href="" class="Tabs2">Home</a>
-        <a href="" class="Tabs2">Menu</a>
-        <a href="" class="Tabs2">Brand Story</a>
-        <a href="" class="Tabs2">Review</a>
+        <a class="Tabs2">Home</a>
+        <a (click)="scroll('Category1')" class="Tabs2">Menu</a>
+        <a (click)="scroll('BrandStory')" class="Tabs2">Brand Story</a>
+        <a (click)="scroll('Review')" class="Tabs2">Review</a>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
       veniam, quis nostrud exercitation ullamco
     </p>
     <button
-      class="BuyNowButton"
+      class="BuyNowButton OrderNow2"
       style="width: 30%; margin: auto; margin-top: 20px; margin-bottom: 50px"
     >
       Order Now
@@ -69,15 +69,15 @@
   </div>
 </div>
 
-<div class="HeaderBar hidee">
+<div class="HeaderBar hidee3">
   <div class="OfficialLogo">
     <img src="../../../assets/images/Logo.jpeg" class="Logo" alt="" />
   </div>
   <div class="TabIcons">
     <a href="" class="Tabs">Home</a>
-    <a href="" class="Tabs">Menu</a>
-    <a href="" class="Tabs">Brand Story</a>
-    <a href="" class="Tabs">Review</a>
+    <a (click)="scroll('Category1')" class="Tabs">Menu</a>
+    <a (click)="scroll('BrandStory')" class="Tabs">Brand Story</a>
+    <a (click)="scroll('Review')" class="Tabs">Review</a>
   </div>
 </div>
 <div class="TextandImage hidee">
@@ -90,7 +90,9 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco
       </p>
-      <button class="BuyNowButton" style="width: 30%">Order Now</button>
+      <button class="BuyNowButton OrderNow2" style="width: 30%">
+        Order Now
+      </button>
     </div>
   </div>
   <div class="HeaderImage hidee">
@@ -131,6 +133,13 @@
       >
       </ngx-horizontal-scroll-menu>
     </div>
+    <button
+      mat-button
+      [matMenuTriggerFor]="Category"
+      class="FoodCategoryButton hidee2"
+    >
+      Food Category
+    </button>
   </div>
   <!-- </div> -->
 </div>
@@ -149,11 +158,14 @@
   >
     <div style="width: 50%; margin: auto">
       <button class="BigOrderNow" (click)="orderNow()">Order Now</button>
+      <a href="#" class="cart" style="margin-top: -90px"
+        ><span class="counter">7</span></a
+      >
     </div>
   </div>
 </div>
 
-<div class="MenuCategory">
+<div class="MenuCategory" id="Category1">
   <h1 class="CategoryHeading">Foody One</h1>
   <div class="SubCategory">
     <div class="ProductCard">
@@ -192,7 +204,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -217,7 +229,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -242,7 +254,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -259,7 +271,7 @@
     </div>
   </div>
 
-  <h1 class="CategoryHeading">Foody Two</h1>
+  <h1 class="CategoryHeading" id="Category2">Foody Two</h1>
   <div class="SubCategory">
     <div class="ProductCard">
       <div class="LeftCardContainer">
@@ -271,7 +283,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -297,7 +309,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -322,7 +334,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -347,7 +359,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -364,7 +376,7 @@
     </div>
   </div>
 
-  <h1 class="CategoryHeading">Foody Three</h1>
+  <h1 class="CategoryHeading" id="Category3">Foody Three</h1>
 
   <div class="SubCategory">
     <div class="ProductCard">
@@ -377,7 +389,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -403,7 +415,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -428,7 +440,7 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -446,7 +458,7 @@
   </div>
 </div>
 <div class="BrandStoryContainer">
-  <div class="BrandStoryInnerContainer">
+  <div class="BrandStoryInnerContainer" id="BrandStory">
     <div class="BrandImages">
       <div class="SolidBack"></div>
       <div class="ImageFront">
@@ -472,7 +484,11 @@
   </div>
 </div>
 
-<div class="CustomerCommentContainer" style="background-color: white">
+<div
+  class="CustomerCommentContainer"
+  style="background-color: white"
+  id="Review"
+>
   <div class="Text">
     <h1>What Our Customers Are Saying</h1>
     <p class="TextPara">
@@ -569,3 +585,9 @@
     </div>
   </div>
 </div>
+
+<mat-menu #Category="matMenu">
+  <button mat-menu-item (click)="scroll('Category1')">Food Category 1</button>
+  <button mat-menu-item (click)="scroll('Category2')">Food Category 2</button>
+  <button mat-menu-item (click)="scroll('Category3')">Food Category 3</button>
+</mat-menu>

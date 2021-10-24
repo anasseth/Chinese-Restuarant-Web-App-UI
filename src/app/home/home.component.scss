@@ -482,6 +482,66 @@ figure.snip1192 .author h5 span {
   width: 300px;
   height: 300px;
 }
+.hidee {
+  visibility: visible;
+}
+.hidee3 {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  top: 0px;
+}
+a.text-style {
+  margin-left: 30px;
+}
+.text-style:hover {
+  color: black;
+  border-bottom: rgb(33, 0, 151) 2px solid;
+}
+
+a.cart {
+  width: 62px;
+  height: 62px;
+  -moz-border-radius: 36px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+  font-size: 18px;
+  text-align: center;
+  color: #616161;
+  text-decoration: none;
+  position: relative;
+  right: 24px;
+  top: 36px;
+  display: block;
+  background: #f2e9e2
+    url("https://img.icons8.com/ios-glyphs/30/000000/favorite-cart.png") center
+    no-repeat;
+  background-size: 36px;
+}
+
+a.cart > span {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  position: absolute;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #000;
+}
+
+a.cart > span.counter {
+  left: 48px;
+  bottom: 48px;
+}
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
@@ -520,6 +580,18 @@ figure.snip1192 .author h5 span {
     visibility: hidden;
   }
 }
+@media screen and (max-width: 1145px) {
+  .SolidBack {
+    left: 25px;
+  }
+  .BrandImages {
+    width: 45%;
+  }
+  .BrandStory {
+    padding: auto;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .OfficialLogo {
     width: 175px;
@@ -550,6 +622,10 @@ figure.snip1192 .author h5 span {
   }
 }
 @media screen and (max-width: 820px) {
+  figure.snip1192 {
+    width: 100%;
+    min-width: 100%;
+  }
   .TabIcons {
     margin-top: 50px;
   }
@@ -560,9 +636,26 @@ figure.snip1192 .author h5 span {
     display: none;
     visibility: hidden;
   }
+  .BrandImages {
+    width: 100%;
+  }
+  .BrandStory {
+    width: 100%;
+  }
+  .ReadMore {
+    width: 80%;
+  }
+  .OrderNow2 {
+    margin-top: -5px;
+    width: 40% !important;
+  }
 }
 @media screen and (max-width: 700px) {
   .hidee {
+    visibility: hidden;
+    display: none;
+  }
+  .hidee3 {
     visibility: hidden;
     display: none;
   }
@@ -623,7 +716,123 @@ figure.snip1192 .author h5 span {
     margin: auto;
     margin-top: -80px;
   }
+  .HorizontalScrollBar {
+    text-align: center;
+  }
+  .FoodCategoryButton {
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px !important;
+    color: #ff5a54;
+    border: 1px solid transparent;
+  }
 }
+@media screen and (max-width: 600px) {
+  .SolidBack {
+    left: 40px;
+  }
+  .ReadMore {
+    width: 80%;
+  }
+  .ProductCard {
+    height: fit-content;
+  }
+  .LeftCardContainer {
+    height: auto;
+  }
+  .MainProductTitle {
+    padding-top: 0px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .MainProductDesc {
+    padding-left: 15px;
+    font-size: 12px;
+    color: black;
+  }
+  .DiscountText {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .MainProductPrice {
+    margin: 0px;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .BuyNowContainer {
+    // width: ;
+  }
+  .BuyNowButton {
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 10px;
+    height: 40px;
+    background-color: #ff5a54;
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .CategoryHeading {
+    font-size: 20px;
+  }
+  .BrandImages {
+    width: 100%;
+    height: fit-content;
+    padding-top: 100px;
+    min-height: 2;
+    padding-bottom: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .MainProductTitle {
+    padding-top: 0px;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .MainProductDesc {
+    padding-left: 15px;
+    font-size: 10px;
+    color: black;
+  }
+  .DiscountText {
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  .MainProductPrice {
+    margin: 0px;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .BuyNowContainer {
+    // width: ;
+  }
+  .BuyNowButton {
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 10px;
+    height: 30px;
+    background-color: #ff5a54;
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .CategoryHeading {
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .wrapper {
     width: 960px;

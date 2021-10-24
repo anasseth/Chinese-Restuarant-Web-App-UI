@@ -3,6 +3,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ProductComponent } from '../shared/product/product.component';
 import { Router, NavigationEnd } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { ElementRef, Renderer2 } from '@angular/core';
+import { ScrollService } from '../service/scroll.service';
+
 
 @Component({
   selector: 'app-home',
@@ -11,11 +15,42 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  listenFunc: any
+
   constructor(
+    private _vps: ViewportScroller,
     public dialog: MatDialog,
     public _productComponent: ProductComponent,
-    public router: Router
-  ) { }
+    public router: Router,
+    elementRef: ElementRef,
+    renderer: Renderer2,
+    private scrollService: ScrollService
+  ) {
+    this.listenFunc = renderer.listen(elementRef.nativeElement, 'click', (event) => {
+      event.preventDefault();
+      let target = event.target || event.srcElement || event.currentTarget;
+      console.log(target);
+      if (target.className != "Tabs2" || target.className != "Tabs") {
+
+        if (target.innerText.slice(6, 8) == "On") {
+          this.scroll('Category1')
+        }
+        else if (target.innerText.slice(6, 8) == "Tw") {
+          this.scroll('Category2')
+        }
+        else if (target.innerText.slice(6, 8) == "Th") {
+          this.scroll('Category3')
+        }
+      }
+
+    });
+
+    scrollService.currentSection.subscribe(
+      (res) => {
+        console.log("current section: ", res)
+      }
+    )
+  }
 
   ngOnInit() {
   }
@@ -29,13 +64,22 @@ export class HomeComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ProductComponent, {
-      width: '250px',
+      width: '99%',
+      maxWidth: '100vw',
+      autoFocus: false,
+      maxHeight: '90vh', //you can adjust the value as per your view
+
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
   }
+
+  scroll(anchor: string): void {
+    this._vps.scrollToAnchor(anchor)
+  }
+
 
   orderNow() {
     this.router.navigate(["/checkout"])
@@ -48,7 +92,7 @@ export class HomeComponent implements OnInit {
   link = 'link';
   distance = 30;
   items = [
-    { title: "Food Category 1" }, { title: "Food Category 2" }, { title: "Food Category 3" }
+    { title: "Foody One" }, { title: "Foody Two" }, { title: "Foody Three" }
   ]
 
   slidesStore = [
@@ -72,6 +116,7 @@ export class HomeComponent implements OnInit {
     dots: false,
     items: 1,
     navSpeed: 700,
+    autoplay: true,
     navText: ['', ''],
     responsive: {
       0: {

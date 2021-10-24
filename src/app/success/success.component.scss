@@ -130,7 +130,7 @@
   // border: 1px solid black;
 }
 .OSCBox3 {
-  width: 15%;
+  width: 17%;
   // border: 1px solid black;
 }
 .ProductDescription {
@@ -216,7 +216,7 @@
 }
 .OrderInformationContainer {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   margin-top: 3px;
@@ -281,7 +281,7 @@ input:checked {
 }
 .DeliveryInformationContainer {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   margin-top: 6px;
@@ -342,4 +342,75 @@ input:checked {
 .ContinueShoppingContainer {
   width: 100%;
   margin: auto;
+}
+.BackButton {
+  width: 50px;
+  height: 50px;
+  background-color: #9e5f48;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  transition-duration: 0.3s;
+}
+.BackButton:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1050px) {
+  .ContinueShopping {
+    width: 100%;
+  }
+  .OfficialLogo {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+  }
+  .SuccessFormContainer {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .HeaderTitle {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .HeaderContainer2Title {
+    margin-top: 50px;
+    height: auto;
+    padding: 0%;
+    margin-left: 0%;
+    margin: auto;
+  }
+  .OrderCompleteLogoClass {
+    height: 90% !important;
+    width: auto !important;
+  }
+  .HeaderTitle {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .SuccessHeader {
+    text-align: center;
+  }
+  .OrderCompleteLogo {
+    width: 40%;
+    margin: auto;
+  }
+  .HeaderContainer2 {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 670px) {
+  .HeaderContainer2Title {
+    margin-top: 50px;
+  }
+  .HeaderTitle {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
 }
