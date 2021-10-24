@@ -16,6 +16,8 @@ import { ScrollService } from '../service/scroll.service';
 export class HomeComponent implements OnInit {
 
   listenFunc: any
+  totalPrice: number = 110;
+  cart: number = 1;
 
   constructor(
     private _vps: ViewportScroller,
@@ -83,6 +85,11 @@ export class HomeComponent implements OnInit {
 
   orderNow() {
     this.router.navigate(["/checkout"])
+  }
+
+  addPrice() {
+    this.totalPrice = this.totalPrice + 110;
+    this.cart = this.cart + 1;
   }
 
 

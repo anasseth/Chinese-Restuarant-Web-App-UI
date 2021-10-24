@@ -1,6 +1,8 @@
 <div class="hidee2 HeaderBar2">
-  <div class="OfficialLogo">
-    <img src="../../../assets/images/Logo.jpeg" class="Logo2" alt="" />
+  <div style="margin: auto; width: 100%" class="TopContainer">
+    <div class="OfficialLogo">
+      <img src="../../../assets/images/Logo.jpeg" class="Logo2" alt="" />
+    </div>
   </div>
   <div style="width: 100%" class="hidee2">
     <div class="TabIcons2">
@@ -149,7 +151,7 @@
   style="width: 100%; z-index: 125"
 >
   <div
-    class="HorizontalScrollBar"
+    class="HorizontalScrollBar2"
     style="
       background-color: transparent;
       border-color: transparent;
@@ -159,9 +161,10 @@
     <div style="width: 50%; margin: auto">
       <button class="BigOrderNow" (click)="orderNow()">Order Now</button>
       <a href="#" class="cart" style="margin-top: -90px"
-        ><span class="counter">7</span></a
+        ><span class="counter">{{ this.cart }}</span></a
       >
     </div>
+    <div class="PriceButton">${{ this.totalPrice }}.00</div>
   </div>
 </div>
 
@@ -178,7 +181,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -204,7 +209,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -229,7 +236,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -254,7 +263,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -283,7 +294,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -309,7 +322,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -334,7 +349,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -359,7 +376,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -389,7 +408,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -415,7 +436,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img
@@ -440,7 +463,9 @@
           Discount
         </p>
         <h1 class="MainProductPrice">$ 110</h1>
-        <button class="BuyNowButton" (click)="openDialog()">Add to Cart</button>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
       </div>
       <div class="RightCardContainer">
         <img

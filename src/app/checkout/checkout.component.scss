@@ -494,6 +494,7 @@ input:checked {
   margin: 2px;
   border-radius: 5px;
   transition-duration: 0.3s;
+  vertical-align: middle;
 }
 .CounterButton:hover {
   background-color: #9e5f48;
@@ -513,6 +514,7 @@ input:checked {
   font-size: 18px;
   font-weight: 700;
   margin: 2px;
+  vertical-align: middle;
 }
 .BackButton {
   width: 50px;

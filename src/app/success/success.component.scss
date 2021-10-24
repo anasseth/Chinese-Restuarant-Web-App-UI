@@ -1,5 +1,5 @@
 .SuccessHeader {
-  width: 100%;
+  // width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
 .OrderCompleteLogo {
   width: 200px;
   height: 200px;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 .OfficialLogo {
   margin: auto;
@@ -48,7 +48,7 @@
   width: 70%;
   height: auto;
   padding: 20px;
-  margin-left: 5%;
+  margin-left: -5%;
 }
 .HeaderTitle {
   font-size: 60px;
@@ -67,6 +67,7 @@
 }
 .SuccessFormContainer {
   margin: auto;
+  margin-top: 50px;
   width: 50%;
   //   height: auto;
 }
@@ -375,6 +376,9 @@ input:checked {
   .HeaderTitle {
     font-size: 50px;
   }
+  .OrderCompleteLogo {
+    margin-left: 15%;
+  }
 }
 @media screen and (max-width: 900px) {
   .HeaderContainer2Title {
@@ -407,7 +411,7 @@ input:checked {
 }
 @media screen and (max-width: 670px) {
   .HeaderContainer2Title {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .HeaderTitle {
     font-size: 30px;
