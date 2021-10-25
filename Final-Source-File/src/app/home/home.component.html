@@ -1,0 +1,621 @@
+<div class="hidee2 HeaderBar2">
+  <div style="margin: auto; width: 100%" class="TopContainer">
+    <div class="OfficialLogo">
+      <img src="../../../assets/images/Logo.jpeg" class="Logo2" alt="" />
+    </div>
+  </div>
+  <div style="width: 100%" class="hidee2">
+    <div class="TabIcons2">
+      <div style="width: fit-content; margin: auto">
+        <a class="Tabs2">Home</a>
+        <a (click)="scroll('Category1')" class="Tabs2">Menu</a>
+        <a (click)="scroll('BrandStory')" class="Tabs2">Brand Story</a>
+        <a (click)="scroll('Review')" class="Tabs2">Review</a>
+      </div>
+    </div>
+  </div>
+  <div class="HeaderImageDemo">
+    <div class="ImageContainer2">
+      <img
+        src="../../assets/images/hero_img2_2x.png"
+        style="width: 90%; margin-top: 60px"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<div style="width: fit-content" class="hidee2">
+  <div class="TextBox" style="text-align: center">
+    <h1
+      class="Que"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        font-weight: 700;
+      "
+    >
+      How About
+    </h1>
+    <h1
+      class="Que"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        color: #ff5a54;
+        font-weight: 700;
+      "
+    >
+      Japanese Food ?
+    </h1>
+    <p
+      class="Para"
+      style="
+        text-align: center;
+        margin-left: 0px;
+        margin: auto;
+        margin-top: 20px;
+      "
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco
+    </p>
+    <button
+      class="BuyNowButton OrderNow2"
+      style="width: 30%; margin: auto; margin-top: 20px; margin-bottom: 50px"
+    >
+      Order Now
+    </button>
+  </div>
+</div>
+
+<div class="HeaderBar hidee3">
+  <div class="OfficialLogo">
+    <img src="../../../assets/images/Logo.jpeg" class="Logo" alt="" />
+  </div>
+  <div class="TabIcons">
+    <a href="" class="Tabs">Home</a>
+    <a (click)="scroll('Category1')" class="Tabs">Menu</a>
+    <a (click)="scroll('BrandStory')" class="Tabs">Brand Story</a>
+    <a (click)="scroll('Review')" class="Tabs">Review</a>
+  </div>
+</div>
+<div class="TextandImage hidee">
+  <div class="HeaderText">
+    <div class="TextBox">
+      <h1 class="Que">How About</h1>
+      <h1 class="Que" style="color: #ff5a54">Japanese Food ?</h1>
+      <p class="Para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco
+      </p>
+      <button class="BuyNowButton OrderNow2" style="width: 30%">
+        Order Now
+      </button>
+    </div>
+  </div>
+  <div class="HeaderImage hidee">
+    <img
+      src="../../assets/images/hero_img.png"
+      style="position: absolute; z-index: 5; left: 40px; width: 20%"
+      alt=""
+    />
+    <img
+      src="../../assets/images/hero_img2_2x.png"
+      style="width: 90%; float: right; margin-right: 30px"
+      alt=""
+    />
+  </div>
+</div>
+<owl-carousel-o [options]="customOptions" class="hidee">
+  <ng-container *ngFor="let slide of slidesStore">
+    <ng-template carouselSlide [id]="slide.id">
+      <img [src]="slide.src" [title]="slide.title" />
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+
+<div
+  [ngClass]="{ 'mat-elevation-z5': true, sticky: isSticky }"
+  style="width: 100%; z-index: 125"
+>
+  <!-- <div class="HorizontalScrollBarContainer"> -->
+  <div class="HorizontalScrollBar">
+    <div style="width: 100%" class="ngx-horizontal-scroll-menu hidee">
+      <ngx-horizontal-scroll-menu
+        *ngIf="items.length > 0"
+        [background]="background"
+        [linkLabel]="'link'"
+        [text]="text"
+        [distance]="distance"
+        [items]="items"
+      >
+      </ngx-horizontal-scroll-menu>
+    </div>
+    <button
+      mat-button
+      [matMenuTriggerFor]="Category"
+      class="FoodCategoryButton hidee2"
+    >
+      Food Category
+    </button>
+  </div>
+  <!-- </div> -->
+</div>
+
+<div
+  [ngClass]="{ hide: true, sticky2: isSticky }"
+  style="width: 100%; z-index: 125"
+>
+  <div
+    class="HorizontalScrollBar2"
+    style="
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    "
+  >
+    <div style="width: 50%; margin: auto">
+      <button class="BigOrderNow" (click)="orderNow()">
+        Order Now
+        <b style="float: right; color: black">${{ this.totalPrice }}.00</b>
+      </button>
+      <a href="#" class="cart" style="margin-top: -90px"
+        ><span class="counter">{{ this.cart }}</span></a
+      >
+    </div>
+    <!-- <div class="PriceButton">${{ this.totalPrice }}.00</div> -->
+  </div>
+</div>
+
+<div class="MenuCategory" id="Category1">
+  <h1 class="CategoryHeading">Foody One</h1>
+  <div class="SubCategory">
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-1.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-1.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-1.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-1.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+  </div>
+
+  <h1 class="CategoryHeading" id="Category2">Foody Two</h1>
+  <div class="SubCategory">
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-2.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-2.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-2.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-2.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+  </div>
+
+  <h1 class="CategoryHeading" id="Category3">Foody Three</h1>
+
+  <div class="SubCategory">
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-3.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-3.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+    <div class="ProductCard">
+      <div class="LeftCardContainer">
+        <h1 class="MainProductTitle">Lorem Ipsum dolor sit amt</h1>
+        <p class="MainProductDesc">Lorem Ipsum dolor sit amt</p>
+        <p class="DiscountText">
+          <s> $125.34 </s>
+          <br />
+          Discount
+        </p>
+        <h1 class="MainProductPrice">$ 110</h1>
+        <button class="BuyNowButton" (click)="openDialog(); addPrice()">
+          Add to Cart
+        </button>
+      </div>
+      <div class="RightCardContainer">
+        <img
+          src="../../assets/images/food-3.jpg"
+          alt=""
+          style="
+            width: 100%;
+            float: right;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          "
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="BrandStoryContainer">
+  <div class="BrandStoryInnerContainer" id="BrandStory">
+    <div class="BrandImages">
+      <div class="SolidBack"></div>
+      <div class="ImageFront">
+        <img src="../../assets/images/_Image_.png" alt="" style="width: 100%" />
+      </div>
+    </div>
+    <div class="BrandStory">
+      <h1 class="StoryTitle">Brand Story</h1>
+      <p class="StoryDesc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <p class="StoryDesc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <button class="ReadMore">Read More</button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="CustomerCommentContainer"
+  style="background-color: white"
+  id="Review"
+>
+  <div class="Text">
+    <h1>What Our Customers Are Saying</h1>
+    <p class="TextPara">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+  </div>
+  <div class="CustomerCommentInnerContainer">
+    <figure class="snip1192">
+      <blockquote>
+        Calvin: Sometimes when I'm talking with others, my words can't keep up
+        with my thoughts. I wonder why we think faster than we speak. Hobbes:
+        Probably so we can think twice.
+      </blockquote>
+      <div class="author">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg"
+          alt="sq-sample1"
+        />
+        <h5>Pelican Steve <span> LittleSnippets</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1192 hover">
+      <blockquote>
+        Thank you. before I begin, I'd like everyone to notice that my report is
+        in a professional, clear plastic binder...When a report looks this good,
+        you know it'll get an A. That's a tip kids. Write it down.
+      </blockquote>
+      <div class="author">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample24.jpg"
+          alt="sq-sample24"
+        />
+        <h5>Max Conversion<span> LittleSnippets</span></h5>
+      </div>
+    </figure>
+    <figure class="snip1192">
+      <blockquote>
+        My behaviour is addictive functioning in a disease process of toxic
+        co-dependency. I need holistic healing and wellness before I'll accept
+        any responsibility for my actions.
+      </blockquote>
+      <div class="author">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample29.jpg"
+          alt="sq-sample29"
+        />
+        <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+      </div>
+    </figure>
+  </div>
+  <div style="margin: auto; width: 40%; text-align: center; margin-top: 30px">
+    <button class="ReadMore">Show More</button>
+  </div>
+</div>
+
+<div class="CustomerCommentContainer" style="background-color: #f2e9e2">
+  <div class="Text">
+    <h1>Photo Gallery</h1>
+    <p class="TextPara">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt
+    </p>
+  </div>
+
+  <div class="CustomerCommentInnerContainer">
+    <div class="wrapper">
+      <div class="container">
+        <div class="horizontal">
+          <img src="https://picsum.photos/500/200" alt="" />
+        </div>
+        <div class="vertical">
+          <img src="https://picsum.photos/200/350" alt="" />
+        </div>
+        <div><img src="https://picsum.photos/200/200" alt="" /></div>
+        <div class="big">
+          <img src="https://picsum.photos/600/600" alt="" />
+        </div>
+        <div class="vertical">
+          <img src="https://picsum.photos/250/400" alt="" />
+        </div>
+        <div class="horizontal">
+          <img src="https://picsum.photos/400/150" alt="" />
+        </div>
+        <div><img src="https://picsum.photos/200/220" alt="" /></div>
+        <div class="horizontal">
+          <img src="https://picsum.photos/450/200" alt="" />
+        </div>
+        <div><img src="https://picsum.photos/220/250" alt="" /></div>
+        <div><img src="https://picsum.photos/250/200" alt="" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-menu #Category="matMenu">
+  <button mat-menu-item (click)="scroll('Category1')">Food Category 1</button>
+  <button mat-menu-item (click)="scroll('Category2')">Food Category 2</button>
+  <button mat-menu-item (click)="scroll('Category3')">Food Category 3</button>
+</mat-menu>
