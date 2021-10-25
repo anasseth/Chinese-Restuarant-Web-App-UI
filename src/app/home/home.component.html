@@ -159,12 +159,15 @@
     "
   >
     <div style="width: 50%; margin: auto">
-      <button class="BigOrderNow" (click)="orderNow()">Order Now</button>
+      <button class="BigOrderNow" (click)="orderNow()">
+        Order Now
+        <b style="float: right; color: black">${{ this.totalPrice }}.00</b>
+      </button>
       <a href="#" class="cart" style="margin-top: -90px"
         ><span class="counter">{{ this.cart }}</span></a
       >
     </div>
-    <div class="PriceButton">${{ this.totalPrice }}.00</div>
+    <!-- <div class="PriceButton">${{ this.totalPrice }}.00</div> -->
   </div>
 </div>
 

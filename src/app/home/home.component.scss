@@ -541,7 +541,7 @@ a.cart {
   color: #616161;
   text-decoration: none;
   position: relative;
-  right: 24px;
+  right: 63px;
   top: 36px;
   display: block;
   background: #f2e9e2
@@ -772,6 +772,9 @@ a.cart > span.counter {
   }
 }
 @media screen and (max-width: 600px) {
+  .BigOrderNow {
+    font-size: 16px;
+  }
   .SolidBack {
     left: 40px;
   }
